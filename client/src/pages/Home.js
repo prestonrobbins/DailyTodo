@@ -14,8 +14,23 @@ const Home = () => {
         >
             <Typography component={'h1'} variant='h3'>Welcome to your Daily ToDos!</Typography>
             <CalendarContainer />
-            <Button variant="contained" disableElevation>
+            <Button 
+                sx={{
+                    m: 1
+                }}
+                variant="contained" 
+                disableElevation
+            >
                 Start Your Day
+            </Button>
+            <Button 
+                sx={{
+                    m: 1
+                }}
+                variant="contained" 
+                disableElevation
+            >
+                Create a ToDo
             </Button>
         </Box>
     )
