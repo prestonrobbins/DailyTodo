@@ -5,6 +5,7 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import CreateToDoForm from './CreateToDoForm';
 
 const style = {
     position: 'absolute',
@@ -51,9 +52,7 @@ export default function CreateToDoModal() {
                         <Typography id="transition-modal-title" variant="h6" component="h2">
                             Create a new ToDo:
                         </Typography>
-                        <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-                            insert form here
-                        </Typography>
+                        <CreateToDoForm/>
                     </Box>
                 </Fade>
             </Modal>
