@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Typography, Button } from '@mui/material';
 import 'react-calendar/dist/Calendar.css';
 import CalendarContainer from "../components/CalendarContainer";
+import CreateToDoModal from "../components/CreateToDoModal";
 
 const Home = () => {
     return (
@@ -23,15 +24,8 @@ const Home = () => {
             >
                 Start Your Day
             </Button>
-            <Button 
-                sx={{
-                    m: 1
-                }}
-                variant="contained" 
-                disableElevation
-            >
-                Create a ToDo
-            </Button>
+        
+            <CreateToDoModal/>
         </Box>
     )
 }
